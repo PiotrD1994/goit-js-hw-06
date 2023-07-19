@@ -10,11 +10,11 @@ function updateCounterValue(value) {
 }
 
 function valueUP(){
-  newValue = counterValue + 1
+  let newValue = counterValue - 1
   updateCounterValue(newValue)
 }
 function valueDown(){
-    newValue = counterValue - 1
+    let newValue = counterValue + 1
     updateCounterValue(newValue)
 }
 buttonValueUp.addEventListener("click", valueUP)

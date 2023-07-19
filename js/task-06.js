@@ -1,5 +1,5 @@
 const validationInput = document.querySelector("#validation-input")
-const validationLength = validationInput.getAttribute("data-length")
+const validationLength = parseInt(validationInput.getAttribute("data-length"))
 function validateLenght(){
     if(validationInput.value.length === validationLength) {
         validationInput.classList.remove("invalid")
