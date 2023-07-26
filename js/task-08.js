@@ -9,5 +9,13 @@ if (email.value === "" || password.value === "") {
     return alert ("Please fill in all the fields!");
 }
 console.log(`Email: ${email.value}, Password: ${password.value}`)
-event.currentTarget.reset()
+
+
+const formData = {
+    email: email.value,
+    password: password.value,
+}
+
+console.log(formData)
+event.currentTarget.reset() 
 }
